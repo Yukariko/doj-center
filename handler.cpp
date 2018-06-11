@@ -39,7 +39,7 @@ void handler::handle_get(http_request message)
     message.reply(status_codes::OK, message.to_string());
     return;
 
-};
+}
 
 //
 // A POST request
@@ -54,7 +54,7 @@ void handler::handle_post(http_request message)
     ucout << kv["submit"] << endl;
     message.reply(status_codes::OK,message.to_string());
     return ;
-};
+}
 
 //
 // A DELETE request
@@ -66,7 +66,7 @@ void handler::handle_delete(http_request message)
     string rep = U("WRITE YOUR OWN DELETE OPERATION");
     message.reply(status_codes::OK,rep);
     return;
-};
+}
 
 
 //
@@ -78,4 +78,4 @@ void handler::handle_put(http_request message)
     string rep = U("WRITE YOUR OWN PUT OPERATION");
     message.reply(status_codes::OK,rep);
     return;
-};
+}
